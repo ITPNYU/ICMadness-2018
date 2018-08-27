@@ -1,0 +1,290 @@
+{
+    "a Kinectron": {
+        "helpers": [
+            "Lisa",
+            "Dano",
+            "Mimi",
+            "Shawn"
+        ],
+        "resources": [{
+            "name": "github",
+            "url": "https://github.com/lisajamhoury/kinectron"
+        }, {
+            "name": "Catch Example",
+            "url": "http://alpha.editor.p5js.org/lisajamhoury/sketches/H1eVwpgRW"
+        }]
+    },
+    "the Wikipedia API": {
+        "helpers": ["Shiffman"],
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=RPz75gcHj18"
+        }, {
+            "name": "code",
+            "url": "http://alpha.editor.p5js.org/icm/sketches/SJcgmBLTb"
+        }, {
+            "name": "documentation",
+            "url": "https://www.mediawiki.org/wiki/API:Main_page"
+        }]
+    },
+    "projection (not on wall)": {
+        "helpers": [],
+        "resources": []
+    },
+    "knees": {
+        "helpers": ["Dano"],
+        "resources": []
+    },
+    "a particle system": {
+        "helpers": ["Shiffman"],
+        "resources": [{
+            "name": "example",
+            "url": "https://p5js.org/examples/simulate-particle-system.html"
+        }, {
+            "name": "video tutorials",
+            "url": "https://www.youtube.com/watch?v=vdgiqMkFygc"
+        }, {
+            "name": "book chapter (Processing code)",
+            "url": "http://natureofcode.com/book/chapter-4-particle-systems/"
+        }]
+    },
+    "a webcam": {
+        "helpers": ["Shiffman", "Shawn"],
+        "resources": [{
+                "name": "example code",
+                "url": "https://alpha.editor.p5js.org/OllieBck/sketches/S1yrAETTb"
+            },
+            {
+                "name": "video tutorials",
+                "url": "https://www.youtube.com/watch?v=bkGf4fEHKak&list=PLRqwX-V7Uu6aKKsDHZdDvN6oCJ2hRY_Ig&index=1"
+            }
+        ]
+    },
+    "pong": {
+        "helpers": ["Shiffman"],
+        "resources": [{
+                "name": "example code",
+                "url": "https://github.com/CodingTrain/Rainbow-Code/tree/master/CodingChallenges/CC_67_Pong_p5.js"
+            },
+            {
+                "name": "video tutorial (way too long)",
+                "url": "https://www.youtube.com/watch?v=IIrC5Qcb2G4"
+            }
+        ]
+    },
+    "some text from project gutenberg": {
+        "helpers": ["Allison", "Shiffman"],
+        "resources": [{
+            "name": "website",
+            "url": "https://www.gutenberg.org/"
+        }]
+    },
+    "p5.Speech": {
+        "helpers": ["Shiffman", "Shawn"],
+        "resources": [{
+            "name": "documentation",
+            "url": "http://ability.nyu.edu/p5.js-speech/"
+        }, {
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=iFTgphKCP9U"
+        }, {
+            "name": "code",
+            "url": "https://github.com/CodingTrain/Rainbow-Code/tree/master/CodingChallenges/CC_80_Voice_Chatbot_with_p5.Speech"
+        }]
+    },
+    "recursion": {
+        "helpers": ["Mathura", "Shiffman"],
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=jPsZwrV9ld0"
+
+        }, {
+            "name": "code",
+            "url": "https://github.com/CodingTrain/Rainbow-Code/tree/master/CodingChallenges/CC_77_Recursion"
+
+        }]
+    },
+    "weather data": {
+        "helpers": ["Mathura", "Shawn"],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://openweathermap.org/api"
+        }, {
+            "name": "documentation",
+            "url": "https://developer.yahoo.com/weather/"
+        }]
+    },
+    "gifs": {
+        "helpers": ["Shiffman"],
+        "resources": [{
+            "name": "GIPHY API",
+            "url": "https://developers.giphy.com/docs/"
+        }, {
+            "name": "video tutorial",
+            "url": "https://www.youtube.com/watch?v=mj8_w11MvH8"
+        }]
+    },
+    "a microphone": {
+        "helpers": ["Mimi", "Shawn"],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://p5js.org/reference/#/p5.AudioIn"
+        }, {
+            "name": "video tutorial",
+            "url": "https://www.youtube.com/watch?v=q2IDNkUws-A"
+        }, {
+            "name": "code example",
+            "url": "https://alpha.editor.p5js.org/icm/sketches/SkiKjDTaZ"
+        }]
+    },
+    "a tracery grammar": {
+        "helpers": ["Shiffman", "Allison"],
+        "resources": [{
+            "name": "tracery website",
+            "url": "http://tracery.io/"
+        }, {
+            "name": "video tutorial",
+            "url": "https://www.youtube.com/watch?v=C3EwsSNJeOE"
+        }, {
+            "name": "written tutorial",
+            "url": "http://shiffman.net/a2z/cfg/#tracery"
+        }]
+    },
+    "a potentiometer": {
+        "helpers": ["Shawn"],
+        "resources": [{
+            "name": "code",
+            "url": "https://github.com/OllieBck/potentiometerExample"
+        }]
+    },
+    "Perlin noise": {
+        "helpers": ["Shiffman"],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://p5js.org/examples/math-noise-wave.html"
+        }, {
+            "name": "video tutorials",
+            "url": "https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD"
+        }]
+    },
+    "Wordnik API": {
+        "helpers": ["Mathura"],
+        "resources": [{
+            "name": "documentation",
+            "url": "http://developer.wordnik.com/docs.html"
+        }, {
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=YsgdUaOrFnQ"
+        }]
+    },
+    "Library of Congress APIs": {
+        "helpers": ["Shiffman"],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://labs.loc.gov/lc-for-robots/"
+        }]
+    },
+    "an accelerometer": {
+        "helpers": ["Shawn", "Mathura"],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://itp.nyu.edu/classes/tangible-interaction/2017/02/25/arduino101-accelerometer-gyro-madgwick-library/"
+        }, {
+            "name": "documentation",
+            "url": "https://itp.nyu.edu/physcomp/lab-intro-to-serial-communications/"
+
+        }, {
+            "name": "documentation",
+            "url": "https://itp.nyu.edu/physcomp/labs/labs-serial-communication/two-way-duplex-serial-communication-using-p5js/"
+        }]
+    },
+    "a MIDI keyboard": {
+        "helpers": ["Mimi"],
+        "resources": [{
+            "name": "code",
+            "url": "https://p5js.org/examples/hello-p5-song.html"
+
+        }]
+    },
+    "someone's Twitter feed": {
+        "helpers": ["Shiffman"],
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=7-nX3YOC4OA"
+        }, {
+            "name": "documentation",
+            "url": "https://developer.twitter.com/en/docs/api-reference-index"
+        }]
+    },
+    "an audio file": {
+        "helpers": ["Shawn"],
+        "resources": []
+    },
+    "a photoresistor": {
+        "helpers": [],
+        "resources": []
+    },
+    "a (physical) button": {
+        "helpers": [],
+        "resources": []
+    },
+    "simple harmonic motion": {
+        "helpers": ["Shiffman"],
+        "resources": []
+    },
+    "the mouse": {
+        "helpers": [],
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=1MPJZ6M52dI"
+        }, {
+            "name": "documentation",
+            "url": "https://itp.nyu.edu/physcomp/labs/labs-mouse-control/lab-mouse-control/"
+        }]
+    },
+    "translate, rotate, and scale": {
+        "helpers": ["Mathura"],
+        "resources": [{
+            "name": "documentation",
+            "url": "https://p5js.org/reference/#group-Transform"
+
+        }, {
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=o9sgjuh-CBM&list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H&index=1"
+        }]
+    },
+    "nested for loops": {
+        "helpers": [],
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=1c1_TMdf8b8"
+        }]
+    },
+    "arrays of objects": {
+        "helpers": ["Shawn"],
+        "resources": [{
+            "name": "video",
+            "url": "https://www.youtube.com/watch?v=fBqaA7zRO58"
+        }]
+    },
+    "a CSV file": {
+        "helpers": ["Shiffman"],
+        "resources": [{
+            "name": "loadTable()",
+            "url": "https://p5js.org/reference/#/p5/loadTable"
+        }]
+    },
+    "a video file": {
+        "helpers": ["Shawn"],
+        "resources": [{
+            "name": "example",
+            "url": "https://p5js.org/examples/dom-video-pixels.html"
+        }, {
+            "name": "documentation",
+            "url": "https://p5js.org/reference/#/p5/createCapture"
+        }, {
+            "name": "tool",
+            "url": "http://antiboredom.github.io/videogrep/"
+        }]
+    }
+}
