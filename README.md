@@ -1,15 +1,15 @@
 # ICMadness
 
-As final project season approaches, you may feel the weight of coming up with a "big" "important" idea. This workshop is about doing the opposite: create a project based on [random instructions from a bot](https://itpnyu.github.io/ICMadness/). What can you do in 2 hours as a collaboration of three random ICM students with three random things (action, technology, topic) put together?
+As final project season approaches, you may feel the weight of coming up with a "big" "important" idea. This workshop is about doing the opposite: create a project based on [random instructions from a bot](https://itpnyu.github.io/ICMadness-2018/). What can you do in 2 hours as a collaboration of three random ICM students with three random things (action, technology, topic) put together?
 
-# Details
+## Details
 * ITP Lounge
 * Friday, Nov 2nd
 * 11am - 2pm
 * Bring your laptop and anything else you might want to use to create.
 
-# Instructions
-1. Arrive at the ITP Lounge a 5 minutes before 11am on Friday, Oct 27th.
+## Instructions
+1. Arrive at the ITP Lounge at least 5 minutes before 11am on Friday, Oct Nov 2nd.
 2. Listen to a short schpiel.
 3. Find your group of three -- link coming soon!
 4. Generate your project instructions -- link coming soon!
@@ -17,11 +17,18 @@ As final project season approaches, you may feel the weight of coming up with a 
 7. Post a description and GIF / video to the blog -- link coming soon! -- [instructions below](#documentation)
 7. Take a break to eat some delicious dumplings and gather back in the lounge at 1:30pm!
 
-# Inspiration
+## Inspiration
 * [Art Assignment Bot](https://twitter.com/artassignbot)
 * [Generonimos by Kate Compton](http://www.galaxykate.com/generominos)
 
-# Documentation
+## Collaboration Tips
+(adapted from ideas from Marina!)
+* A successful collaboration requires a combination of autonomy, honesty, and accountability.
+* Start discussing the skills you have and the things you are excited about.
+* In a learning environment, you should do both things you like, things you want to learn.
+* Things no one likes to do should be shared! 
+
+## Documentation
 
 Towards the end of ICMadness, we will spend a few minutes documenting your work by creating a post on the ICM Blog. This will include adding a gif of what you have made. To make the gif, you can use [giphy](https://giphy.com/create/gifmaker). 
 
