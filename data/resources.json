@@ -152,6 +152,9 @@
         }, {
             "name": "written tutorial",
             "url": "http://shiffman.net/a2z/cfg/#tracery"
+        }, {
+            "name": "written tutorial",
+            "url": "http://air.decontextualize.com/tracery/"
         }]
     },
     "a potentiometer": {
@@ -262,10 +265,13 @@
         }]
     },
     "a CSV file": {
-        "helpers": ["Shiffman"],
+        "helpers": ["Shiffman", "Allison"],
         "resources": [{
             "name": "loadTable()",
             "url": "https://p5js.org/reference/#/p5/loadTable"
+        }, {
+            "name": "written tutorial",
+            "url": "https://creative-coding.decontextualize.com/csv-files/"
         }]
     },
     "a video file": {
