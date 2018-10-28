@@ -106,7 +106,7 @@
         }]
     },
     "weather data": {
-        "helpers": ["Shawn"],
+        "helpers": ["Shawn","Koji"],
         "resources": [{
             "name": "documentation",
             "url": "https://openweathermap.org/api"
@@ -136,6 +136,16 @@
         }, {
             "name": "sample code",
             "url": "https://github.com/sleepy-maker/sample_for_icm/tree/master/api/nytimes"
+        }]
+    },
+    "OMDb API": {
+        "helpers": ["Koji"],
+        "resources": [{
+            "name": "OMDb API",
+            "url": "http://www.omdbapi.com/"
+        }, {
+            "name": "sample code",
+            "url": "https://github.com/sleepy-maker/sample_for_icm/tree/master/api/omdb"
         }]
     },
     "a microphone": {
