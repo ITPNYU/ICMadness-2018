@@ -178,7 +178,7 @@
         }]
     },
     "a potentiometer": {
-        "helpers": ["Shawn"],
+        "helpers": ["Shawn","Koji"],
         "resources": [{
             "name": "code",
             "url": "https://github.com/OllieBck/potentiometerExample"
