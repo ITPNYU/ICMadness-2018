@@ -29,7 +29,6 @@ As final project season approaches, you may feel the weight of coming up with a 
 * Things no one likes to do should be shared! 
 
 ## Documentation
-
 Towards the end of ICMadness, we will spend a few minutes documenting your work by creating a post on the ICM Blog. This will include adding a gif of what you have made. To make the gif, you can use [giphy](https://giphy.com/create/gifmaker). 
 
 1. Visit the blog link -- link coming soon and login with your NetID and password. (your netID is the same as your email adress, eg - mmg542)
