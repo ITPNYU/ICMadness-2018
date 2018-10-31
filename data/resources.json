@@ -1,4 +1,17 @@
 {
+  "MobileNet image classification": {
+    "helpers": ["Shiffman"],
+    "resources": [
+      {
+        "name": "code",
+        "url": "https://editor.p5js.org/ml5/sketches/rJ-C5AQ5X"
+      },
+      {
+        "name": "video tutorial",
+        "url": "https://youtu.be/D9BoBSkLvFo"
+      }
+    ]
+  },
   "PoseNet": {
     "helpers": ["Shiffman"],
     "resources": [

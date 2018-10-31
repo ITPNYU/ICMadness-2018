@@ -74,7 +74,8 @@
     "bacteria"
   ],
   "technology": [
-    "posenet",
+    "PoseNet",
+    "MobileNet image classification",
     "the Wikipedia API",
     "projection (not on wall)",
     "knees",
