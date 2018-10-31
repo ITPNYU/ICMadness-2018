@@ -39,8 +39,19 @@
     ]
   },
   "projection (not on wall)": {
-    "helpers": [],
-    "resources": []
+    "helpers": ["Wenqi"],
+    "resources": [
+      {
+        "name": "P5 sketch Projection tool - Syphoner",
+        "url": "http://www.sigmasix.ch/syphoner/"
+      }, {
+        "name": "Mapping - Madmapper",
+        "url": "https://madmapper.com/"
+      }, {
+        "name": "Mapping - touchdesigner",
+        "url": "https://www.derivative.ca/"
+      }
+    ]
   },
   "knees": {
     "helpers": ["Dano"],
@@ -288,7 +299,7 @@
     ]
   },
   "a MIDI keyboard": {
-    "helpers": [],
+    "helpers": ["Wenqi"],
     "resources": [
       {
         "name": "code",
@@ -301,8 +312,14 @@
     "resources": []
   },
   "a photoresistor": {
-    "helpers": [],
-    "resources": []
+    "helpers": ["Wenqi"],
+    "resources": [{
+      "name": "video",
+      "url": "https://vimeo.com/album/2801639/video/102042976#t=3m41s"
+    }, {
+      "name": "tutorial",
+      "url": "https://learn.adafruit.com/photocells"
+    }]
   },
   "a (physical) button": {
     "helpers": [],
