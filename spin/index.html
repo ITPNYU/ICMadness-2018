@@ -2,60 +2,43 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>ICMadness</title>
-  <script src="libraries/p5.js" type="text/javascript"></script>
-  <script src="libraries/p5.dom.js" type="text/javascript"></script>
-  <script src="libraries/p5.sound.js" type="text/javascript"></script>
-  <script src="wheel.js" type="text/javascript"></script>
-  <script src="sketch.js" type="text/javascript"></script>
-
-  <style>
-    body {
-      padding: 20px;
-      color: white;
-      background-color: black;
-    }
-
-    a {
-      color: white;
-    }
-
-    .half {
-      width: 50%;
-      display: inline-block;
-      float: left;
-    }
-
-    .half img {
-      width: 70%;
-    }
-  </style>
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.js"></script>
+  <script src="libraries/p5.sound.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
 
 </head>
 
 <body>
-
-  <h1>ICMadness</h1>
-
-  <p>
-    <!--<button id="spin_button">spin again</button>-->
-  </p>
-
-  <div id="canvasContainer"></div>
-  <div class="half">
-    <p>
-      <div id="instructions"></div>
-      <div>
-        <ul id="resources">
-        </ul>
+  <header>
+    <h1> Wacky Idea Generator </h1>
+  </header>
+  <section>
+    <div id="prompt">
+      <div class="promptSegment">
+        <p> Make a project about </p>
       </div>
-      <div id="permalink"></div>
-    </p>
-  </div>
-  <div class="half">
-    <img id="spin_button" src="https://openclipart.org/image/2400px/svg_to_png/167247/Rounded-Button.png"></img>
-  </div>
+      <div id="topics" class="promptSegment changingSegment">
+      </div>
+      <div class="promptSegment">
+        <p> that </p>
+      </div>
+      <div id="actions" class="promptSegment changingSegment">
+      </div>
+      <div class="promptSegment">
+        <p> with </p>
+      </div>
+      <div id="technologies" class="promptSegment changingSegment">
+      </div>
+    </div>
+    <button id="spin"> Spin! </button>
+  </section>
+  <footer>
+
+  </footer>
+  <script src="sketch.js"></script>
+  <script src="Wheel.js"></script>
 
 
 </body>

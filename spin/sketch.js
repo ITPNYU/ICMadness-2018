@@ -1,149 +1,110 @@
-// A2Z F17
-// Daniel Shiffman
-// http://shiffman.net/a2z
-// https://github.com/shiffman/A2Z-F17
+/*TODOs - 
+ - look for unused vars 
+ - css 
+ - sounds (replace/edit the current sound)
+ - check possible use of aria-live 
+ - what do we do with long text values in the wheel?
+ - make wheel spin atleast one time if target is too close to current index
+ - resources
+ - permalink
+*/
 
-let data;
-let resourceData;
-let resourceElts = [];
-let permalink;
-let params;
-let first = true;
+let spinButton;
+let data, resourceData;
 
-let casino;
-let trip_for_two;
+let topicSection;
 
-// Here is the grammar
+let topicWheel, actionWheel, technologyWheel;
+
+let topics = [];
+let actions = [];
+let technologies = [];
+
+let currentAction, currentTopic, currentTechnology;
+
+// number of items in slot machine window
+// an odd number is recommended so we can have a clear mid point
+let itemsInSlotWindow = 5;
+
+// we will be using position of element to move things
+let slotWindowStartPos;
+let distBetweenItemsInWindow;
+
+let clickSound;
+
 function preload() {
   data = loadJSON('data/generator.json');
-  resourceData = loadJSON('data/resources.json');
-  casino = loadSound('sound/casino.mp3');
-  trip_for_two = loadSound('sound/trip-for-two.mp3');
-}
 
-let wheel1;
-let wheel2;
-let wheel3;
-let gotResult = false;
+  //listed public domain
+  clickSound = loadSound('sound/Stapler-SoundBible.com-374581609.mp3');
+
+  // resourceData = loadJSON('data/resources.json');
+}
 
 function setup() {
-  params = getURLParams();
+  frameRate(60);
 
-  createCanvas(1300, 500).parent('canvasContainer');
+  topicWheel = new Wheel(
+    '#topics',
+    data.topic,
+    itemsInSlotWindow,
+    floor(data.topic.length + random(data.topic.length))
+  );
+  actionWheel = new Wheel(
+    '#actions',
+    data.action,
+    itemsInSlotWindow,
+    floor(data.action.length + random(data.action.length))
+  );
+  technologyWheel = new Wheel(
+    '#technologies',
+    data.technology,
+    itemsInSlotWindow,
+    floor(data.technology.length + random(data.technology.length))
+  );
 
-  generate();
-
-  // A button to generate a new sentence
-  //let spin_button = select('#spin_button');
-  //spin_button.mousePressed(generate);
-  document.getElementById("spin_button").addEventListener("click", generate);
+  spinButton = select('button');
+  spinButton.mouseClicked(startSpin);
+  startSpin();
 }
-
 
 function draw() {
-  background(0);
-  textAlign(LEFT, TOP);
-  fill(255);
-  text("Make a project about", 20, height / 2);
-  wheel1.display();
-  wheel1.move();
-  fill(255);
-  text("that", 545, height / 2);
-  wheel2.display();
-  wheel2.move();
-  fill(255);
-  text("with", 915, height / 2);
-  wheel3.display();
-  wheel3.move();
-
-  // TODO: return the final instructions as text
-  // and generate resources
-  if (wheel1.done && wheel2.done && wheel3.done && !gotResult) {
-    newResults([wheel1.result(), wheel2.result(), wheel3.result()]);
+  if (topicWheel.spin) {
+    topicWheel.move();
+  }
+  if (actionWheel.spin) {
+    actionWheel.move();
+  }
+  if (technologyWheel.spin) {
+    technologyWheel.move();
   }
 }
 
-function newResults(r) {
+function startSpin(
+  clickEvent,
+  targetTopic = floor(random(data.topic.length)),
+  targetAction = floor(random(data.action.length)),
+  targetTechnology = floor(random(data.technology.length))
+) {
+  topicWheel.target = targetTopic;
+  topicWheel.spin = true;
+  topicWheel.resetAriaHidden();
 
-  // fade out sound
-  casino.fade(0, 1);
-  setTimeout(function() {
-    trip_for_two.play();
-  }, 1200);
+  actionWheel.target = targetAction;
+  actionWheel.spin = true;
+  actionWheel.resetAriaHidden();
 
-  console.log("DONE! Results below");
-  console.log(r);
-  r.forEach(function(r) {
-    console.log(r);
-    res = resourceData[r];
-    if (res != undefined) {
-      console.log('found something');
-      console.log(res);
-      let container = select("#resources");
+  technologyWheel.target = targetTechnology;
+  technologyWheel.spin = true;
+  technologyWheel.resetAriaHidden();
 
-      let title = createElement("li", "resources");
-      container.child(title);
-      resourceElts.push(title);
-
-      let list = createElement("ul", "");
-      container.child(list);
-      resourceElts.push(list);
-
-      let helpers = res["helpers"];
-      if (helpers != undefined) {
-        let li = createElement("li", "Ask " + helpers.join(" or "));
-        list.child(li);
-        resourceElts.push(li);
-      }
-      let links = res["resources"];
-      if (links != undefined) {
-        let li = createElement("li", "");
-        resourceElts.push(li);
-        let linktags = [];
-        links.forEach(function(link) {
-          linktags.push("<a target='_blank' href='" + link.url + "'>" + link.name + "</a>");
-        });
-        li.html("Check out " + linktags.join(", "));
-        list.child(li);
-      }
-    }
-  });
-  gotResult = true;
-}
-
-
-function generate() {
-  trip_for_two.fade(0, 1);
-  casino.play();
-
-  // clear any resources?
-  for (let i = 0; i < resourceElts.length; i++) {
-    resourceElts[i].remove();
-  }
-
-  wheel1 = new Wheel(200, 0, 320, height, data.topic);
-  wheel2 = new Wheel(570, 0, 320, height, data.action);
-  wheel3 = new Wheel(940, 0, 320, height, data.technology);
-  gotResult = false;
-  if (first && params.w1) {
-    wheel1.target(atob(decodeURIComponent(params.w1)));
-    wheel2.target(atob(decodeURIComponent(params.w2)));
-    wheel3.target(atob(decodeURIComponent(params.w3)));
-  } else {
-    wheel1.restart();
-    wheel2.restart();
-    wheel3.restart();
-  }
-
-
-  if (!permalink) {
-    permalink = createA('', 'permalink');
-    permalink.parent('#permalink');
-  }
-  permalink.attribute('href',
-    '?w1=' + encodeURIComponent(btoa(wheel1.result())) +
-    '&w2=' + encodeURIComponent(btoa(wheel2.result())) +
-    '&w3=' + encodeURIComponent(btoa(wheel3.result())));
-
-  first = false;
+  // ultra magical prediction system.
+  print(
+    'make a project about ' +
+      data.topic[targetTopic] +
+      ' that ' +
+      data.action[targetAction] +
+      ' with ' +
+      data.technology[targetTechnology]
+  );
 }
