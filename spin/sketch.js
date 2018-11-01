@@ -30,14 +30,16 @@ let itemsInSlotWindow = 5;
 let slotWindowStartPos;
 let distBetweenItemsInWindow;
 
-let clickSound;
+let clickSound, endSound;
+
+let isSpinning = false;
 
 function preload() {
   data = loadJSON('data/generator.json');
 
   //listed public domain
   clickSound = loadSound('sound/Stapler-SoundBible.com-374581609.mp3');
-
+  endSound = loadSound('sound/Electronic_Chime-KevanGC-495939803.mp3');
   // resourceData = loadJSON('data/resources.json');
 }
 
@@ -87,6 +89,14 @@ function draw() {
   if (technologyWheel.spin) {
     technologyWheel.move();
   }
+
+  if(isSpinning){
+    if(topicWheel.difference == 0 && actionWheel.difference == 0 && technologyWheel.difference == 0){
+      endSound.play();
+      isSpinning = false;
+    }
+  }
+
 }
 
 function startSpin(
@@ -96,6 +106,7 @@ function startSpin(
   targetTechnology = floor(random(data.technology.length))
 ) {
 
+  isSpinning = true;
   // console.log("startSpin", targetTopic, targetAction, targetTechnology);
   // console.log("startSpin", targetTopic, data.topic[targetTopic]);
 
