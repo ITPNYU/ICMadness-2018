@@ -75,7 +75,7 @@
     ]
   },
   "a webcam": {
-    "helpers": ["Shiffman", "Shawn", "Mimi"],
+    "helpers": ["Shiffman", "Shawn", "Mimi", "Mithru"],
     "resources": [
       {
         "name": "example code",
@@ -88,7 +88,7 @@
     ]
   },
   "pong": {
-    "helpers": ["Shiffman"],
+    "helpers": ["Shiffman", "Mithru"],
     "resources": [
       {
         "name": "example code",
@@ -131,7 +131,7 @@
     ]
   },
   "recursion": {
-    "helpers": ["Shiffman", "Mimi"],
+    "helpers": ["Shiffman", "Mimi", "Mithru"],
     "resources": [
       {
         "name": "video",
@@ -282,7 +282,7 @@
     ]
   },
   "an accelerometer": {
-    "helpers": ["Shawn", "Mimi"],
+    "helpers": ["Shawn", "Mimi", "Mithru"],
     "resources": [
       {
         "name": "documentation",
@@ -312,7 +312,7 @@
     "resources": []
   },
   "a photoresistor": {
-    "helpers": ["Wenqi", "Mimi"],
+    "helpers": ["Wenqi", "Mimi", "Mithru"],
     "resources": [{
       "name": "video",
       "url": "https://vimeo.com/album/2801639/video/102042976#t=3m41s"
@@ -322,7 +322,7 @@
     }]
   },
   "a (physical) button": {
-    "helpers": ["Mimi"],
+    "helpers": ["Mimi", "Mithru"],
     "resources": []
   },
   "simple harmonic motion": {
@@ -330,7 +330,7 @@
     "resources": []
   },
   "the mouse": {
-    "helpers": [],
+    "helpers": ["Mithru"],
     "resources": [
       {
         "name": "video",
@@ -343,7 +343,7 @@
     ]
   },
   "translate, rotate, and scale": {
-    "helpers": ["Shiffman", "Mimi"],
+    "helpers": ["Shiffman", "Mimi", "Mithru"],
     "resources": [
       {
         "name": "documentation",
@@ -374,7 +374,7 @@
     ]
   },
   "a CSV file": {
-    "helpers": ["Shiffman", "Allison"],
+    "helpers": ["Shiffman", "Allison", "Mithru"],
     "resources": [
       {
         "name": "loadTable()",
