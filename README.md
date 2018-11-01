@@ -14,7 +14,7 @@ As final project season approaches, you may feel the weight of coming up with a 
 3. [Find your group of three.](https://itpnyu.github.io/ICMadness-2018/groups/)
 4. [Generate your project instructions: spin the wheel!](https://itpnyu.github.io/ICMadness-2018/spin/)
 5. Start making stuff
-7. Post a description and GIF / video to the blog -- link coming soon! -- [instructions below](#documentation)
+7. Post a description and GIF / video to the [ICMadness 2018 blog](https://itp.nyu.edu/workshops/icm2018) -- [instructions below](#documentation)
 7. Take a break to eat some delicious dumplings and gather back in the lounge at 1:30pm!
 
 ## Inspiration
