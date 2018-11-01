@@ -1,8 +1,8 @@
-/*TODOs - 
- - look for unused vars 
- - css 
+/*TODOs -
+ - look for unused vars
+ - css
  - sounds (replace/edit the current sound)
- - check possible use of aria-live 
+ - check possible use of aria-live
  - what do we do with long text values in the wheel?
  - make wheel spin atleast one time if target is too close to current index
  - resources
@@ -65,7 +65,13 @@ function setup() {
 
   let params = getURLParams();
   console.log(params);
-  startSpin(null, params.topic, params.action, params.tech);
+  //startSpin();
+  startSpin(
+    null,
+    (params.topic)?params.topic:floor(random(data.topic.length)),
+    (params.action)?params.action:floor(random(data.action.length)),
+    (params.tech)?params.tech:floor(random(data.technology.length))
+  );
 
   spinButton = select('button');
   spinButton.mouseClicked(startSpin);
@@ -89,6 +95,10 @@ function startSpin(
   targetAction = floor(random(data.action.length)),
   targetTechnology = floor(random(data.technology.length))
 ) {
+
+  // console.log("startSpin", targetTopic, targetAction, targetTechnology);
+  // console.log("startSpin", targetTopic, data.topic[targetTopic]);
+
   topicWheel.target = targetTopic;
   topicWheel.spin = true;
   topicWheel.resetAriaHidden();
