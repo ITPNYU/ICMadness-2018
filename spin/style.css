@@ -1,80 +1,84 @@
 html,
 body {
-    margin-left: auto;
-    margin-right: auto;
-    width:100%;
-    color: #efefef;
-    background-color: #000;
-    height: 90%; 
-    text-align: center;
-    vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color: #efefef;
+  background-color: #000;
+  height: 90%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#permalink {
+  display: none;
 }
 
 #prompt {
-    overflow-x: auto;
-    white-space: nowrap;
-    height: 80%;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
-    vertical-align: middle;
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .promptSegment {
-    height: 80%;
-    display: inline-block;
-    padding: 2%;
-    text-align: center;
-    vertical-align: middle;
-/*     height: auto; */
-/*     padding-top: auto;
+  height: 80%;
+  display: inline-block;
+  padding: 2%;
+  text-align: center;
+  vertical-align: middle;
+  /*     height: auto; */
+  /*     padding-top: auto;
     padding-bottom: auto; */
 }
 
 button {
-    background: #911;
-    cursor:pointer;
-    box-shadow: 1px 1px 3px 2px #511;
-    color: white;
-    border-width: 0px;
-    border-radius: 10%;
-    padding:5%;
-    margin-top:2%;
-    margin-left: auto;
-    margin-right: auto;
-    
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5em;
+  background: #911;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 2px #511;
+  color: white;
+  border-width: 0px;
+  border-radius: 10%;
+  padding: 5%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
 }
 
 p {
-/*     padding-top: auto;
+  /*     padding-top: auto;
     padding-bottom: auto; */
-    position: relative;
-    font-size: 1.2em;
-    overflow: hidden;
-/*     overflow-x:auto; */
-/*     background: white; */
-/*     line-height:1em; */
+  position: relative;
+  font-size: 1.2em;
+  overflow: hidden;
+  /*     overflow-x:auto; */
+  /*     background: white; */
+  /*     line-height:1em; */
 }
 
 .changingSegment {
-/*     h-offset v-offset blur spread color */
-    box-shadow: 1px 1px 3px 2px #000 inset;
-    border-radius: 5%;
-    border-style: groove;
-    border-color: gray;
-    border-width: 1px;
-    position: relative;
-    overflow: none;
-    background-color: #efefef;
-    color: black;
-    width: 15%;
-    padding-right:2%;
-/*     max-height: 10%;
+  /*     h-offset v-offset blur spread color */
+  box-shadow: 1px 1px 3px 2px #000 inset;
+  border-radius: 5%;
+  border-style: groove;
+  border-color: gray;
+  border-width: 1px;
+  position: relative;
+  overflow: none;
+  background-color: #efefef;
+  color: black;
+  width: 15%;
+  padding-right: 2%;
+  /*     max-height: 10%;
     width: 20%;
     height: 20%; */
-    overflow: hidden;
+  overflow: hidden;
 }

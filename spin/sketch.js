@@ -63,9 +63,12 @@ function setup() {
     floor(data.technology.length + random(data.technology.length))
   );
 
+  let params = getURLParams();
+  console.log(params);
+  startSpin(null, params.topic, params.action, params.tech);
+
   spinButton = select('button');
   spinButton.mouseClicked(startSpin);
-  startSpin();
 }
 
 function draw() {
@@ -97,6 +100,14 @@ function startSpin(
   technologyWheel.target = targetTechnology;
   technologyWheel.spin = true;
   technologyWheel.resetAriaHidden();
+
+  // form permalink
+  let permalink = `?topic=${targetTopic}&action=${targetAction}&tech=${targetTechnology}`;
+  console.log(permalink);
+
+  select('#permalink')
+    .show()
+    .attribute('href', permalink);
 
   // ultra magical prediction system.
   print(
