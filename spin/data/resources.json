@@ -13,7 +13,7 @@
     ]
   },
   "PoseNet": {
-    "helpers": ["Shiffman"],
+    "helpers": ["Shiffman", "Mimi"],
     "resources": [
       {
         "name": "code",
@@ -58,7 +58,7 @@
     "resources": []
   },
   "a particle system": {
-    "helpers": ["Shiffman"],
+    "helpers": ["Shiffman", "Mimi"],
     "resources": [
       {
         "name": "example",
@@ -75,7 +75,7 @@
     ]
   },
   "a webcam": {
-    "helpers": ["Shiffman", "Shawn"],
+    "helpers": ["Shiffman", "Shawn", "Mimi"],
     "resources": [
       {
         "name": "example code",
@@ -131,7 +131,7 @@
     ]
   },
   "recursion": {
-    "helpers": ["Shiffman"],
+    "helpers": ["Shiffman", "Mimi"],
     "resources": [
       {
         "name": "video",
@@ -174,7 +174,7 @@
     ]
   },
   "NYTimes API": {
-    "helpers": ["Koji"],
+    "helpers": ["Koji", "Mimi"],
     "resources": [
       {
         "name": "NYTimes API",
@@ -200,7 +200,7 @@
     ]
   },
   "a microphone": {
-    "helpers": ["Shawn"],
+    "helpers": ["Shawn", "Mimi"],
     "resources": [
       {
         "name": "documentation",
@@ -238,7 +238,7 @@
     ]
   },
   "a potentiometer": {
-    "helpers": ["Shawn", "Koji"],
+    "helpers": ["Shawn", "Koji", "Mimi"],
     "resources": [
       {
         "name": "code",
@@ -247,7 +247,7 @@
     ]
   },
   "Perlin noise": {
-    "helpers": ["Shiffman"],
+    "helpers": ["Shiffman", "Mimi"],
     "resources": [
       {
         "name": "documentation",
@@ -282,7 +282,7 @@
     ]
   },
   "an accelerometer": {
-    "helpers": ["Shawn"],
+    "helpers": ["Shawn", "Mimi"],
     "resources": [
       {
         "name": "documentation",
@@ -308,11 +308,11 @@
     ]
   },
   "an audio file": {
-    "helpers": ["Shawn"],
+    "helpers": ["Shawn", "Mimi"],
     "resources": []
   },
   "a photoresistor": {
-    "helpers": ["Wenqi"],
+    "helpers": ["Wenqi", "Mimi"],
     "resources": [{
       "name": "video",
       "url": "https://vimeo.com/album/2801639/video/102042976#t=3m41s"
@@ -322,11 +322,11 @@
     }]
   },
   "a (physical) button": {
-    "helpers": [],
+    "helpers": ["Mimi"],
     "resources": []
   },
   "simple harmonic motion": {
-    "helpers": ["Shiffman"],
+    "helpers": ["Shiffman", "Mimi"],
     "resources": []
   },
   "the mouse": {
@@ -343,7 +343,7 @@
     ]
   },
   "translate, rotate, and scale": {
-    "helpers": ["Shiffman"],
+    "helpers": ["Shiffman", "Mimi"],
     "resources": [
       {
         "name": "documentation",
@@ -356,7 +356,7 @@
     ]
   },
   "nested for loops": {
-    "helpers": [],
+    "helpers": ["Anyone"],
     "resources": [
       {
         "name": "video",
@@ -365,7 +365,7 @@
     ]
   },
   "arrays of objects": {
-    "helpers": ["Shawn"],
+    "helpers": ["Anyone"],
     "resources": [
       {
         "name": "video",
@@ -387,7 +387,7 @@
     ]
   },
   "a video file": {
-    "helpers": ["Shawn"],
+    "helpers": ["Shawn", "Mimi"],
     "resources": [
       {
         "name": "example",
