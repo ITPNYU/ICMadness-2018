@@ -45,7 +45,7 @@
         "name": "P5 sketch Projection tool - Syphoner",
         "url": "http://www.sigmasix.ch/syphoner/"
       }, {
-        "name": "Mapping - Madmapper",
+        "name": "Mapping - Madmapper website",
         "url": "https://madmapper.com/"
       }, {
         "name": "Mapping - touchdesigner",
@@ -95,7 +95,7 @@
         "url": "https://github.com/CodingTrain/Rainbow-Code/tree/master/CodingChallenges/CC_67_Pong_p5.js"
       },
       {
-        "name": "video tutorial (way too long)",
+        "name": "long video tutorial",
         "url": "https://www.youtube.com/watch?v=IIrC5Qcb2G4"
       }
     ]
@@ -400,7 +400,7 @@
     "helpers": ["Shiffman", "Allison", "Mithru"],
     "resources": [
       {
-        "name": "loadTable()",
+        "name": "reference",
         "url": "https://p5js.org/reference/#/p5/loadTable"
       },
       {
