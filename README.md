@@ -14,7 +14,7 @@ As final project season approaches, you may feel the weight of coming up with a 
 3. [Find your group of three.](https://itpnyu.github.io/ICMadness-2018/groups/)
 4. [Generate your project instructions: spin the wheel!](https://itpnyu.github.io/ICMadness-2018/spin/)
 5. Start making stuff
-7. Post a description and GIF / video to the blog -- link coming soon! -- [instructions below](#documentation)
+7. Post a description and GIF / video to the [ICMadness 2018 blog](https://itp.nyu.edu/workshops/icm2018) -- [instructions below](#documentation)
 7. Take a break to eat some delicious dumplings and gather back in the lounge at 1:30pm!
 
 ## Inspiration
@@ -29,10 +29,9 @@ As final project season approaches, you may feel the weight of coming up with a 
 * Things no one likes to do should be shared! 
 
 ## Documentation
-Towards the end of ICMadness, we will spend a few minutes documenting your work by creating a post on the ICM Blog. This will include adding a gif of what you have made. To make the gif, you can use [giphy](https://giphy.com/create/gifmaker). 
+Towards the end of ICMadness, we will spend a few minutes documenting your work by creating a post on the ICMadness 2018 Blog. This will include adding a gif of what you have made. To make the gif, you can use [giphy](https://giphy.com/create/gifmaker). 
 
-1. Visit the blog link -- link coming soon and login with your NetID and password. (your netID is the same as your email adress, eg - mmg542)
-1. Once you login, go to the home page -- link coming soon.
+1. Visit the blog [link](https://itp.nyu.edu/workshops/icm2018) and login with your NetID and password. (your netID is the same as your email adress, eg - rrp349)
 1. To create a new post, click on the giant plus button on the top right and fill the form that it shows.
-1. Note: The form field where you put in a gif accepts images/gifs of size < 7MB. You can also add links to your code or video. **Make sure to hyperlink all links.**
+1. Note: The form field where you put in a gif accepts images/gifs of size < 2MB. You can also add links to your code or video. **Make sure to hyperlink all links.**
 1. Once you're done with the form, hit submit and eat some dumplings!
