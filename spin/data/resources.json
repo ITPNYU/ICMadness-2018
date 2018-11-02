@@ -54,11 +54,11 @@
     ]
   },
   "knees": {
-    "helpers": ["Dano"],
+    "helpers": ["Dano", "Luisa"],
     "resources": []
   },
   "a particle system": {
-    "helpers": ["Shiffman", "Mimi"],
+    "helpers": ["Shiffman", "Mimi", "Luisa"],
     "resources": [
       {
         "name": "example",
@@ -88,7 +88,7 @@
     ]
   },
   "pong": {
-    "helpers": ["Shiffman", "Mithru"],
+    "helpers": ["Shiffman", "Mithru", "Luisa"],
     "resources": [
       {
         "name": "example code",
@@ -131,7 +131,7 @@
     ]
   },
   "recursion": {
-    "helpers": ["Shiffman", "Mimi", "Mithru"],
+    "helpers": ["Shiffman", "Mimi", "Mithru", "Luisa"],
     "resources": [
       {
         "name": "video",
@@ -144,7 +144,7 @@
     ]
   },
   "weather data": {
-    "helpers": ["Shawn", "Koji"],
+    "helpers": ["Shawn", "Koji", "Luisa"],
     "resources": [
       {
         "name": "documentation",
@@ -247,7 +247,7 @@
     ]
   },
   "Perlin noise": {
-    "helpers": ["Shiffman", "Mimi"],
+    "helpers": ["Shiffman", "Mimi", "Luisa"],
     "resources": [
       {
         "name": "documentation",
@@ -299,7 +299,7 @@
     ]
   },
   "a MIDI keyboard": {
-    "helpers": ["Wenqi"],
+    "helpers": ["Wenqi", "Luisa"],
     "resources": [
       {
         "name": "code",
@@ -308,7 +308,7 @@
     ]
   },
   "an audio file": {
-    "helpers": ["Shawn", "Mimi"],
+    "helpers": ["Shawn", "Mimi", "Luisa"],
     "resources": [
       {
         "name": "documentation",
@@ -345,7 +345,7 @@
     }]
   },
   "a (physical) button": {
-    "helpers": ["Mimi", "Mithru"],
+    "helpers": ["Mimi", "Mithru", "Luisa"],
     "resources": []
   },
   "simple harmonic motion": {
@@ -366,7 +366,7 @@
     ]
   },
   "translate, rotate, and scale": {
-    "helpers": ["Shiffman", "Mimi", "Mithru"],
+    "helpers": ["Shiffman", "Mimi", "Mithru", "Luisa"],
     "resources": [
       {
         "name": "documentation",
@@ -379,7 +379,7 @@
     ]
   },
   "nested for loops": {
-    "helpers": [],
+    "helpers": ["luisa"],
     "resources": [
       {
         "name": "video",
@@ -397,7 +397,7 @@
     ]
   },
   "a CSV file": {
-    "helpers": ["Shiffman", "Allison", "Mithru"],
+    "helpers": ["Shiffman", "Allison", "Mithru", "Luisa"],
     "resources": [
       {
         "name": "reference",
@@ -436,7 +436,7 @@
     ]
   },
   "an input field": {
-    "helpers": [],
+    "helpers": ["Luisa"],
     "resources": [
       {
         "name": "documentation",
@@ -445,7 +445,7 @@
     ]
   },
   "a spotlight": {
-    "helpers": ["Mimi"],
+    "helpers": ["Mimi", "Luisa"],
     "resources": [
       {
         "name": "example",
@@ -454,7 +454,7 @@
     ]
   },
   "modulo": {
-    "helpers": ["Mimi"],
+    "helpers": ["Mimi", "Luisa"],
     "resources": [
       {
         "name": "video",
