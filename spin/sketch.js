@@ -40,13 +40,15 @@ function preload() {
   resourceData = loadJSON('data/resources.json');
 
   //sounds are public domain
-  clickSound = loadSound('sound/Stapler-SoundBible.com-374581609.mp3');
+  clickSound = loadSound('sound/faded_sine.mp3');
   endSound = loadSound('sound/Electronic_Chime-KevanGC-495939803.mp3');
 }
 
 function setup() {
   console.log(resourceData)
   frameRate(60);
+ 
+  clickSound.setVolume(0.4);
 
   topicWheel = new Wheel(
     '#topics',
