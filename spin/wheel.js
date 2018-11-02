@@ -69,6 +69,7 @@ class Wheel {
             for (let i = 0; i < this.elements.length; i++) {
                 if (i == floor(this.elements.length / 2)) {
                     this.elements[i].attribute('aria-hidden', false);
+                    this.elements[i].addClass('wrap');
                 } else {
                     this.elements[i].style('visibility', 'hidden');
                 }

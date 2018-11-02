@@ -19,7 +19,12 @@ a{
   display: none;
 }
 
+.wrap{
+  white-space: normal;
+}
+
 #prompt {
+  display: flex;
   overflow-x: auto;
   white-space: nowrap;
   height: 80%;
@@ -30,7 +35,7 @@ a{
 }
 
 .promptSegment {
-  height: 80%;
+  /* height: 80%; */
   display: inline-block;
   padding: 2%;
   text-align: center;
@@ -81,9 +86,16 @@ p {
   background-color: #fff;
   color: black;
   width: 15%;
+  height:16em;
+  padding-top: 3em;
   padding-right: 2%;
   /*     max-height: 10%;
     width: 20%;
     height: 20%; */
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.staticSegment{
+  margin-top: auto;
+  margin-bottom: auto;
 }
