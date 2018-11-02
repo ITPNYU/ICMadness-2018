@@ -33,17 +33,19 @@ let distBetweenItemsInWindow;
 let clickSound, endSound;
 
 let isSpinning = false;
+let resourcesAvailable = false;
 
 function preload() {
   data = loadJSON('data/generator.json');
+  resourceData = loadJSON('data/resources.json');
 
-  //listed public domain
+  //sounds are public domain
   clickSound = loadSound('sound/Stapler-SoundBible.com-374581609.mp3');
   endSound = loadSound('sound/Electronic_Chime-KevanGC-495939803.mp3');
-  // resourceData = loadJSON('data/resources.json');
 }
 
 function setup() {
+  console.log(resourceData)
   frameRate(60);
 
   topicWheel = new Wheel(
@@ -76,6 +78,8 @@ function setup() {
   );
 
   spinButton = select('button');
+  // select('#permalink').hide();
+  // select('#resourcesSegment').hide();
   spinButton.mouseClicked(startSpin);
 }
 
@@ -91,8 +95,14 @@ function draw() {
   }
 
   if(isSpinning){
+    select('#permalink').hide();
+    select('#resourcesSegment').hide();
     if(topicWheel.difference == 0 && actionWheel.difference == 0 && technologyWheel.difference == 0){
       endSound.play();
+      select('#permalink').show();
+      if(resourcesAvailable) {
+        select('#resourcesSegment').show();
+      }
       isSpinning = false;
     }
   }
@@ -126,9 +136,32 @@ function startSpin(
   let permalink = `?topic=${targetTopic}&action=${targetAction}&tech=${targetTechnology}`;
   console.log(permalink);
 
-  select('#permalink')
-    .show()
-    .attribute('href', permalink);
+  select('#permalink').attribute('href', permalink);
+
+  Object.keys(resourceData).forEach(function(key) {
+    // console.log(key,targetTechnology);
+    if(key == data.technology[targetTechnology]) {
+        // console.log(resourceData[key]);
+        if(resourceData[key]["helpers"].length > 0){
+          let helpers = 'People who can help with this : ';
+          resourcesAvailable = true;
+          for(helper in resourceData[key]["helpers"]){
+              helpers += resourceData[key]["helpers"][helper] + ', '
+          }
+          select('#helpers').html(helpers.slice(0, helpers.length-2))
+        }
+
+        if(resourceData[key]["resources"].length > 0){
+          resourcesAvailable = true;
+          let resources = 'Links to other resources : ';
+          for(resource in resourceData[key]["resources"]){
+            resourcesAvailable = true;
+            resources += '<a href="' + resourceData[key]["resources"][resource].url +'">' + resourceData[key]["resources"][resource].name + '</a>, '
+          }
+          select('#resources').html(resources.slice(0, resources.length-2))
+        }
+    }
+  });
 
   // ultra magical prediction system.
   print(
