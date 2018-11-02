@@ -25,11 +25,12 @@ function setup() {
   
   // buttons filter/list all groups
   if (searched == false) {
-  	list_groups();  
+    list_groups();  
   } 
 
   //get input
   inp = select('#search-text');
+  // inp.changed(search); // ?
 
   //get search button
   search_button = select('#search-button');
@@ -40,7 +41,16 @@ function setup() {
   all_groups.mousePressed(list_groups);
 }
 
-// function draw() {}
+// add filter with ENTER & RETURN
+// & all groups with TAB
+function keyPressed() {
+  if (keyCode == ENTER || keyCode == RETURN) {
+    search();
+    return false; // prevent any default behavior
+  } else if (keyCode == TAB) {
+    list_groups();
+  }
+}
 
 function shuffle_names(){
   //get all names
@@ -58,7 +68,7 @@ function shuffle_names(){
 }
 
 function list_groups() {
-	searched = false;
+  searched = false;
 
   // place shuffled groups/names in dom
   d.html("");
@@ -96,7 +106,7 @@ function search() {
   }
 
   //reset html & fill with result
-	d.html("");
+  d.html("");
 
   for (let p = 0; p < return_matches.length; p++) {
     return_matches[p].parent(d);
