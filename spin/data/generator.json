@@ -1,6 +1,7 @@
 {
   "start": ["Make a project that #action# with #technology# about #topic#."],
   "action": [
+    "sparkles",
     "only lasts a second",
     "beeps",
     "sings",
@@ -39,6 +40,7 @@
     "music",
     "dialog",
     "mirrors",
+    "numbers",
     "sustainability",
     "birds",
     "museums",
@@ -70,6 +72,7 @@
     "living life to its fullest",
     "fear",
     "cats",
+    "pumpkins",
     "you",
     "bacteria"
   ],
